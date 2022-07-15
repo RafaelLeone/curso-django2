@@ -18,6 +18,7 @@ from django.urls import path, include
 from pypro.base.views import home
 
 urlpatterns = [
-        path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', include('twitter.urls')),
+    path('', include('usuarios.urls')),
 ]
